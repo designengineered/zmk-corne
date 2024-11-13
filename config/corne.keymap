@@ -30,12 +30,12 @@
         compatible = "zmk,combos";
 
         a {
-            bindings = <&kp ESCAPE>;
+            bindings = <&kp GRAVE>;
             key-positions = <2 1>;
         };
 
         b {
-            bindings = <&kp CLCK>;
+            bindings = <&mt LS(LA(LC(LEFT_GUI))) ESCAPE>;
             key-positions = <14 13>;
         };
 
@@ -81,10 +81,10 @@
         default_layer {
             label = "0";
             bindings = <
-&kp ESC       &kp Q  &kp W  &kp F      &kp P        &kp B                 &kp J                &kp L           &kp U                     &kp Y    &kp SEMI     &kp BSPC
-&kp CAPSLOCK  &kp A  &kp R  &kp S      &kp T        &kp G                 &kp M                &kp N           &kp E                     &kp I    &kp O  &kp RET
-&kp TAB       &kp Z  &kp X  &kp C      &kp D        &kp V                 &kp K                &kp N           &kp COMMA                 &kp DOT  &kp FSLH  &kp RSHFT
-                            &lt 3 SQT  &lt 2 SPACE  &mt LEFT_WIN LCTRL    &lt SYMBOLS_L SPACE  &kp LEFT_SHIFT  &mt LA SINGLE_QUOTE
+&kp ESC       &kp Q  &kp W  &kp F      &kp P        &kp B                 &kp J                &kp L           &kp U                      &kp Y    &kp SEMI  &kp BSPC
+&kp CAPSLOCK  &kp A  &kp R  &kp S      &kp T        &kp G                 &kp M                &kp N           &kp E                      &kp I    &kp O     &kp RET
+&kp TAB       &kp Z  &kp X  &kp C      &kp D        &kp V                 &kp K                &kp N           &kp COMMA                  &kp DOT  &kp FSLH  &kp RSHFT
+                            &lt 3 SQT  &lt 2 SPACE  &mt LEFT_WIN LCTRL    &lt SYMBOLS_L SPACE  &kp LEFT_SHIFT  &mt LEFT_ALT SINGLE_QUOTE
             >;
         };
 
