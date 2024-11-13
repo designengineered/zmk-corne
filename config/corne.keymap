@@ -35,7 +35,7 @@
         };
 
         b {
-            bindings = <&mt LS(LA(LC(LEFT_GUI))) ESCAPE>;
+            bindings = <&kp ESCAPE>;
             key-positions = <14 13>;
         };
 
@@ -73,6 +73,16 @@
             bindings = <&sys_reset>;
             key-positions = <30 10>;
         };
+
+        k {
+            bindings = <&kp PLUS>;
+            key-positions = <19 21>;
+        };
+
+        l {
+            bindings = <&kp LS(LA(LC(LEFT_GUI)))>;
+            key-positions = <38 39>;
+        };
     };
 
     keymap {
@@ -83,7 +93,7 @@
             bindings = <
 &kp ESC       &kp Q  &kp W  &kp F      &kp P        &kp B                 &kp J                &kp L           &kp U                      &kp Y    &kp SEMI  &kp BSPC
 &kp CAPSLOCK  &kp A  &kp R  &kp S      &kp T        &kp G                 &kp M                &kp N           &kp E                      &kp I    &kp O     &kp RET
-&kp TAB       &kp Z  &kp X  &kp C      &kp D        &kp V                 &kp K                &kp N           &kp COMMA                  &kp DOT  &kp FSLH  &kp RSHFT
+&kp TAB       &kp Z  &kp X  &kp C      &kp D        &kp V                 &kp K                &kp H           &kp COMMA                  &kp DOT  &kp FSLH  &kp RSHFT
                             &lt 3 SQT  &lt 2 SPACE  &mt LEFT_WIN LCTRL    &lt SYMBOLS_L SPACE  &kp LEFT_SHIFT  &mt LEFT_ALT SINGLE_QUOTE
             >;
         };
