@@ -80,7 +80,7 @@
         };
 
         l {
-            bindings = <&kp LS(LA(LC(LEFT_GUI)))>;
+            bindings = <&mt LS(LA(LC(LEFT_GUI))) LA(BACKSPACE)>;
             key-positions = <38 39>;
         };
     };
@@ -91,40 +91,30 @@
         default_layer {
             label = "0";
             bindings = <
-&kp ESC       &kp Q  &kp W  &kp F      &kp P        &kp B                 &kp J                &kp L           &kp U                      &kp Y    &kp SEMI  &kp BSPC
-&kp CAPSLOCK  &kp A  &kp R  &kp S      &kp T        &kp G                 &kp M                &kp N           &kp E                      &kp I    &kp O     &kp RET
-&kp TAB       &kp Z  &kp X  &kp C      &kp D        &kp V                 &kp K                &kp H           &kp COMMA                  &kp DOT  &kp FSLH  &kp RSHFT
-                            &lt 3 SQT  &lt 2 SPACE  &mt LEFT_WIN LCTRL    &lt SYMBOLS_L SPACE  &kp LEFT_SHIFT  &mt LEFT_ALT SINGLE_QUOTE
+&none  &kp Q  &kp W  &kp F      &kp P          &kp B                   &kp J                     &kp L                &kp U      &kp Y    &kp SEMI  &none
+&none  &kp A  &kp R  &kp S      &kp T          &kp G                   &kp M                     &kp N                &kp E      &kp I    &kp O     &none
+&none  &kp Z  &kp X  &kp C      &kp D          &kp V                   &kp K                     &kp H                &kp COMMA  &kp DOT  &kp FSLH  &none
+                     &kp RCTRL  &kp LEFT_META  &mt LEFT_SHIFT SPACE    &mt LEFT_SHIFT BACKSPACE  &mt LEFT_ALT RETURN  &to 1
             >;
         };
 
         number_layer {
             label = "1";
             bindings = <
-&none  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &none
-&none  &none   &none   &none   &none   &none     &none   &none   &none   &none   &none   &none
-&none  &none   &none   &none   &none   &none     &none   &none   &none   &none   &none   &none
-                       &none   &none   &none     &none   &none   &none
+&none  &kp N1            &kp N2             &kp N3           &kp N4                 &kp N5                  &kp N6          &kp N7    &kp N8        &kp N9     &kp N0   &none
+&none  &kp LT            &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp NON_US_BACKSLASH    &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &kp SQT  &none
+&none  &kp GREATER_THAN  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp PIPE                &kp GRAVE       &none     &none         &none      &none    &none
+                                            &to 0            &none                  &none                   &trans          &trans    &to 2
             >;
         };
 
         bt_layer {
             label = "2";
             bindings = <
-&kp ESC       &kp LS(N1)    &kp LS(N2)      &kp LS(N3)    &kp LS(N4)    &kp LS(N5)     &kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)  &none
-&none         &none         &kp LEFT_ARROW  &kp DEL       &kp RIGHT     &bt BT_CLR     &none       &none       &none       &none       &none       &none
-&bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2    &bt BT_SEL 1  &bt BT_SEL 0  &bootloader    &none       &none       &none       &none       &none       &none
-                                            &none         &none         &none          &none       &none       &none
-            >;
-        };
-
-        arrow_layer {
-            label = "3";
-            bindings = <
-&none  &none           &kp UP_ARROW    &none      &sys_reset  &none    &none  &none  &none  &none  &none  &none
-&none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &none       &none    &none  &none  &none  &none  &none  &none
-&none  &none           &none           &none      &none       &none    &none  &none  &none  &none  &none  &none
-                                       &none      &none       &none    &none  &none  &none
+&kp ESC       &kp LS(N1)    &kp LS(N2)      &kp LS(N3)    &kp LS(N4)    &kp LS(N5)     &kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)   &kp LS(N0)  &none
+&none         &bootloader   &kp LEFT_ARROW  &kp DEL       &kp RIGHT     &bt BT_CLR     &none       &none       &none       &bootloader  &none       &none
+&bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2    &bt BT_SEL 1  &bt BT_SEL 0  &bootloader    &none       &none       &none       &none        &none       &none
+                                            &to 0         &none         &none          &none       &none       &to 1
             >;
         };
     };
