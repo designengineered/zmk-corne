@@ -60,16 +60,6 @@
             key-positions = <21 20>;
         };
 
-        h {
-            bindings = <&sys_reset>;
-            key-positions = <1 29>;
-        };
-
-        j {
-            bindings = <&sys_reset>;
-            key-positions = <30 10>;
-        };
-
         k {
             bindings = <&kp PLUS>;
             key-positions = <19 21>;
@@ -83,6 +73,11 @@
         e {
             bindings = <&kp DEL>;
             key-positions = <37 40>;
+        };
+
+        ret {
+            bindings = <&kp RET>;
+            key-positions = <22 23>;
         };
     };
 
