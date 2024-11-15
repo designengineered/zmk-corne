@@ -77,7 +77,7 @@
 
         ret {
             bindings = <&kp RET>;
-            key-positions = <22 23>;
+            key-positions = <22 21>;
         };
     };
 
