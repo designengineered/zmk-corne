@@ -58,7 +58,7 @@
 
         g {
             bindings = <&kp EQUAL>;
-            key-positions = <21 20 8 9 20>;
+            key-positions = <21 20 20>;
         };
 
         k {
@@ -100,6 +100,16 @@
             bindings = <&kp EXCLAMATION>;
             key-positions = <1 13>;
         };
+
+        gaming {
+            bindings = <&to 4>;
+            key-positions = <40 21 22>;
+        };
+
+        fn {
+            bindings = <&to 3>;
+            key-positions = <13 37 14>;
+        };
     };
 
     keymap {
@@ -131,7 +141,7 @@
 &kp ESC       &kp LS(N1)    &kp LS(N2)      &kp LS(N3)    &kp LS(N4)    &kp LS(N5)     &kp LS(N6)   &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)  &none
 &none         &none         &kp LEFT_ARROW  &kp DEL       &kp RIGHT     &bt BT_CLR     &bl BL_TOG   &none       &none       &none       &none       &none
 &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2    &bt BT_SEL 1  &bt BT_SEL 0  &bootloader    &bootloader  &none       &none       &none       &none       &none
-                                            &to 0         &trans        &trans         &trans       &trans      &to 3
+                                            &to 0         &trans        &trans         &trans       &trans      &to 1
             >;
         };
 
@@ -141,6 +151,15 @@
 &trans  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp K_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP    &kp C_REWIND  &kp C_PAUSE  &kp C_FAST_FORWARD  &trans   &trans   &trans
 &trans  &trans                &trans                &trans      &trans        &trans             &trans        &trans       &trans              &trans   &trans   &trans
                                                     &to 0       &trans        &trans             &trans        &trans       &to 1
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &kp ENTER  &kp Q   &kp W   &kp E   &kp R     &kp Y      &trans  &trans  &trans  &trans  &trans
+&trans  &kp CAPS   &kp A   &kp S   &kp D   &kp G     &kp H      &trans  &trans  &trans  &trans  &trans
+&trans  &kp LSHFT  &trans  &trans  &trans  &kp B     &trans     &trans  &trans  &trans  &trans  &trans
+                           &to 0   &trans  &trans    &kp SPACE  &trans  &to 3
             >;
         };
     };
