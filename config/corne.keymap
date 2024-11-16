@@ -156,10 +156,10 @@
 
         layer_4 {
             bindings = <
-&trans  &kp ENTER  &kp Q   &kp W   &kp E   &kp R     &kp Y      &trans  &trans  &trans  &trans  &trans
-&trans  &kp CAPS   &kp A   &kp S   &kp D   &kp G     &kp H      &trans  &trans  &trans  &trans  &trans
-&trans  &kp LSHFT  &trans  &trans  &trans  &kp B     &trans     &trans  &trans  &trans  &trans  &trans
-                           &to 0   &trans  &trans    &kp SPACE  &trans  &to 3
+&trans  &kp ENTER  &kp Q   &kp W   &kp E   &kp R        &kp Y         &trans  &trans  &trans  &trans  &trans
+&trans  &kp CAPS   &kp A   &kp S   &kp D   &kp G        &kp H         &trans  &trans  &trans  &trans  &trans
+&trans  &kp LSHFT  &trans  &trans  &trans  &kp B        &trans        &trans  &trans  &trans  &trans  &trans
+                           &to 0   &trans  &kp SPACE    &kp LEFT_ALT  &trans  &to 3
             >;
         };
     };
