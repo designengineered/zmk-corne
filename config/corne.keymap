@@ -56,13 +56,8 @@
             key-positions = <19 20>;
         };
 
-        g {
-            bindings = <&kp EQUAL>;
-            key-positions = <20 21>;
-        };
-
         k {
-            bindings = <&kp PLUS>;
+            bindings = <&kp EQUAL>;
             key-positions = <19 21>;
         };
 
