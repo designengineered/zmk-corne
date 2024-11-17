@@ -58,7 +58,7 @@
 
         g {
             bindings = <&kp EQUAL>;
-            key-positions = <21 20 20>;
+            key-positions = <20 20 21>;
         };
 
         k {
