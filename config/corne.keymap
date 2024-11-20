@@ -107,12 +107,12 @@
         };
 
         scu {
-            bindings = <&kp K_SCROLL_UP>;
+            bindings = <&mkp MB5>;
             key-positions = <17 15>;
         };
 
         scd {
-            bindings = <&kp K_SCROLL_DOWN>;
+            bindings = <&mkp MB4>;
             key-positions = <16 15>;
         };
 
@@ -158,10 +158,10 @@
         number_layer {
             label = "1";
             bindings = <
-&none  &kp N1            &kp N2             &kp N3           &kp N4                 &kp N5           &kp N6          &kp N7    &kp N8        &kp N9      &kp N0     &none
-&none  &kp LT            &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp BACKSLASH    &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW  &kp RIGHT   &kp SQT    &none
-&none  &kp GREATER_THAN  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp PIPE         &mkp MB5        &mkp MB4  &kp COMMA     &kp PERIOD  &kp SLASH  &none
-                                            &to 0            &trans                 &trans           &trans          &trans    &to 2
+&none  &kp N1            &kp N2             &kp N3           &kp N4                 &kp N5           &kp N6          &kp N7       &kp N8        &kp N9      &kp N0     &none
+&none  &kp LT            &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp BACKSLASH    &kp LEFT_ARROW  &kp DOWN     &kp UP_ARROW  &kp RIGHT   &kp LG(D)  &none
+&none  &kp GREATER_THAN  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp PIPE         &kp K_COPY      &kp K_PASTE  &kp COMMA     &kp PERIOD  &kp SLASH  &none
+                                            &to 0            &trans                 &trans           &trans          &trans       &to 2
             >;
         };
 
