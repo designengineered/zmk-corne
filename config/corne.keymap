@@ -115,6 +115,31 @@
             bindings = <&kp K_SCROLL_DOWN>;
             key-positions = <16 15>;
         };
+
+        dolla {
+            bindings = <&kp DOLLAR>;
+            key-positions = <4 16>;
+        };
+
+        pe {
+            bindings = <&kp PERCENT>;
+            key-positions = <5 17>;
+        };
+
+        ca {
+            bindings = <&kp CARET>;
+            key-positions = <6 18>;
+        };
+
+        amp {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <7 19>;
+        };
+
+        sta {
+            bindings = <&kp ASTERISK>;
+            key-positions = <8 20>;
+        };
     };
 
     keymap {
