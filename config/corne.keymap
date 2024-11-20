@@ -105,6 +105,16 @@
             bindings = <&to 4>;
             key-positions = <13 37 14>;
         };
+
+        scu {
+            bindings = <&kp K_SCROLL_UP>;
+            key-positions = <17 15>;
+        };
+
+        scd {
+            bindings = <&kp K_SCROLL_DOWN>;
+            key-positions = <16 15>;
+        };
     };
 
     keymap {
