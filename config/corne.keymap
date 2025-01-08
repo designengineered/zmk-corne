@@ -4,11 +4,12 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define DEFAULT_L 0
 #define SYMBOLS_L 1
@@ -98,12 +99,12 @@
 
         gaming {
             bindings = <&to 3>;
-            key-positions = <40 21 22>;
+            key-positions = <40 9 20 10>;
         };
 
         fn {
             bindings = <&to 4>;
-            key-positions = <13 37 14>;
+            key-positions = <37 15 1 2>;
         };
 
         scu {
@@ -144,6 +145,26 @@
         undo {
             bindings = <&kp LG(Z)>;
             key-positions = <30 32>;
+        };
+
+        leftpar {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <9 21>;
+        };
+
+        rightpar {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <10 22>;
+        };
+
+        leftbr {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <13 25>;
+        };
+
+        rightbr {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <14 26>;
         };
     };
 
